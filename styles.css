@@ -11,6 +11,14 @@
 	box-sizing: border-box;
 }
 
+#sidebar, #logo, .sidebar-children, #content, #slideshow, .card {
+	opacity: 0;
+	filter: blur(10px);
+	transform: translateX(10rem);
+	transition: opacity 0.8s, filter 0.8s, transform 0.8s;
+	transition-timing-function: ease-in-out;
+}
+
 body {
 	display: grid;
 	grid-template-columns: auto auto;
@@ -43,18 +51,20 @@ body {
 	grid-template-columns: auto auto;
 	border: solid var(--black);
 	border-radius: 10px;
+	transition: all 0.8s;
 }
 
 .card-list {
 	grid-row: 1 / span 2;
 	grid-column: 2;
 	border-color: rgba(0, 0, 0, 0);
-	display: block;
+	width: 0;
 	visibility: hidden;
-	transition: opacity 0.8s;
-	transition: width 0.8s;
-	transition: height 0.8s;
-	transition: opacity 0.8s;
+	height: 0;
+	opacity: 0;
+	filter: blur(50px);
+	transition-property: width, height, opacity, filter, visibility;
+	transition-duration: 0.8s;
 }
 
 .card-title {
@@ -63,6 +73,8 @@ body {
 	border-color: var(--grey);
 	background-color: var(--grey);
 	align-self: center;
+	transition-property: width, height, opacity, filter, visibility;
+	transition-duration: 0.8s;
 }
 
 .card-img {
