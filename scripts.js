@@ -25,7 +25,7 @@ function handleCardLeave() {
 }
 
 cards.map((card, i) => {
-  card.classList.add(i % 2 == 1 ? "card-odd": "card-even")
+  card.classList.add(i % 2 == 1 ? "card-odd" : "card-even");
   Array.from(card.children).filter((child) =>
     child.classList.contains("card-title")
   ).map((title) => {
@@ -42,11 +42,22 @@ cards.map((card, i) => {
   });
 });
 cards.map((card, i) => {
-  card.isOdd = i% 2 == 0;
+  card.isOdd = i % 2 == 0;
   card.addEventListener("mouseenter", handleCardEnter);
   card.addEventListener("mouseleave", handleCardLeave);
 });
-["#navbar", "#logo", ".navbar-children", "#content", "#slideshow", ".card"]
+[
+  "#navbar",
+  "#logo",
+  ".navbar-children",
+  "#content",
+  "#slideshow",
+  ".card",
+  "h1",
+  "h2",
+  "#gallery",
+  ".gallery-img",
+]
   .forEach((e, index) => {
     setTimeout(
       () => {

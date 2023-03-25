@@ -12,7 +12,7 @@
 	overflow-x: hidden;
 }
 
-#navbar, #logo, .navbar-children, #content, #slideshow, .card {
+#navbar, #logo, .navbar-children, #content, #slideshow, #gallery, .gallery-img, .card, h1, h2 {
 	opacity: 0;
 	filter: blur(10px);
 	transform: translateX(10rem);
@@ -127,6 +127,18 @@ ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+}
+
+.gallery-img {
+	width: 50vh;
+	transition-property: width, height, box-shadow;
+	transition-duration: 0.8s;
+	box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+}
+
+.galley-img:hover {
+
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
 }
 
 #slideshow {
