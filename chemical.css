@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+	--white: #ffffff;
+	--grey: #808080;
+	--brown: #c38e3c;
+	--sangria: #92000a;
+	--black: #000000;
+}
+
+.chemicalBg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.chemicalBgImg{
+    position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.nav li{
+    list-style: none;
+    text-decoration: none;
+    margin: 20px 10px;
+    font-size: 20px;
+}
+.nav li a{
+    text-decoration: none;
+}
+.actives{
+    text-decoration: underline;
+}
+.navbar-toggle{
+    display: none;
+}
+.introWrap{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 50px auto;
+    text-align: center;
+}
+.intro h1{
+    font-size: 60px;
+}
+.intro h3{
+    margin-top: 30px;
+    font-size: 24px;
+}
+.intro h4{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.intro button{
+    margin-top: 40px;
+    background-color: #808080;
+    padding: 15px;
+    font-size: large;
+}
+.programs{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.programs h1{
+    font-size: 60px;
+}
+.courses{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.courses img{
+    width: 100%;
+}
+.Faculty{
+    width: 100%;
+    text-align: center;
+}
+.main_head{
+    font-size: 60px;
+    text-decoration: underline;
+}
+.hod{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.Faculty img{
+    width: 300px;
+    margin-top:40px ;
+}
+.Alumni{
+    width: 100%;
+    text-align: center;
+}
+@media only screen and (max-width:780px){
+    .nav li{
+        /* margin: 5px 10px; */
+        font-size: 12px;
+        margin: 20px 4px;
+    }
+    .introWrap{
+        width:85% ;
+    }
+    .intro h1{
+        font-size: 40px;
+    }
+    .intro h3{
+        margin-top: 20px;
+    }
+    .intro button{
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width:1025px){
+    .introWrap{
+        width:70% ;
+    }
+    .intro h1{
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (max-width:900px){
+    .introWrap{
+        width:75% ;
+    }
+    .intro h1{
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width:560px){
+    .nav li{
+        /* margin: 5px 10px; */
+        font-size: 12px;
+        margin: 20px 4px;
+    }
+    .introWrap{
+        width:85% ;
+    }
+    .intro h1{
+        font-size: 35px;
+    }
+    .intro h3{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .intro h4{
+        font-size: 15px;
+    }
+    .intro button{
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width:325px){
+   
+    .introWrap{
+        width:95% ;
+    }
+    .intro button{
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
