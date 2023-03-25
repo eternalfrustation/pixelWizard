@@ -46,7 +46,7 @@ cards.map((card, i) => {
   card.addEventListener("mouseenter", handleCardEnter);
   card.addEventListener("mouseleave", handleCardLeave);
 });
-["#sidebar", "#logo", ".sidebar-children", "#content", "#slideshow", ".card"]
+["#navbar", "#logo", ".navbar-children", "#content", "#slideshow", ".card"]
   .forEach((e, index) => {
     setTimeout(
       () => {
